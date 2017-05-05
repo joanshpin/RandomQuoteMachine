@@ -1,0 +1,70 @@
+@mixin borderRules()
+  border: 2px solid white
+  border-radius: 15px
+
+body
+  font-family: Helvetica, sans-serif
+  background-color: #ffa6a0
+  text-align: center
+
+.titleBar
+  @include borderRules
+  background-color: #54585b
+  padding: 5px
+  color: white
+  width: 300px
+  margin: auto
+  //margin-right: 25%
+  margin-top: 15px
+  display: inline-block
+
+main
+  width: 100%
+  #quote-block
+    color: white
+    /*&:hover
+      transform: rotateX(180deg)
+      transition: 1.6s
+      transform-style: preserve-3d*/
+    #quote
+      @include borderRules
+      font-size: 20px
+      margin-top: 5px
+      padding: 0px 15px
+      background-color: #000
+      float: center
+      display: inline-block
+    #quoteAuthore
+      @include borderRules
+      font-size: 15px
+      margin-top: 5px
+      display: inline-block
+      padding-left: 15px
+      padding-right: 15px
+      padding-top: -2px
+      padding-bottom: -2px
+      background-color: #4d5966
+      float: center
+      clear: both
+
+  .buttons-container
+    width: 100%
+    background-color: white
+    margin: 20px 0px
+    //position: fixed
+    padding: 10px 0px
+    bottom: 150px
+    left: 0
+    .buttonik
+      @include borderRules
+      width: auto
+      font-size: 15px
+      text-align: center
+      margin: 2px
+      padding: 12px 20px
+      //border: none
+      //border-radius: 7px
+      background-color: black
+      color: white
+      &:focus
+        outline: 0
