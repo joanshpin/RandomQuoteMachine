@@ -1,3 +1,10 @@
+html,
+body,
+ul,
+ol
+  margin:  0
+  padding: 0
+
 @mixin borderRules()
   border: 2px solid white
   border-radius: 15px
@@ -8,15 +15,15 @@ body
   text-align: center
 
 .titleBar
-  @include borderRules
-  background-color: #54585b
+  // @include borderRules
+  background-color: black
   padding: 5px
   color: white
-  width: 300px
-  margin: auto
+  width: 100%
+  // margin: auto
   //margin-right: 25%
   margin-top: 15px
-  display: inline-block
+  display: block
 
 main
   width: 100%
