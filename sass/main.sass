@@ -29,25 +29,25 @@ main
   width: 100%
   height: 60vh
   display: flex
-  justify-content: space-around
+  // justify-content: space-around
   align-items: center
   flex-direction: column
   #quote-block
     color: white
-    /*&:hover
-      transform: rotateX(180deg)
-      transition: 1.6s
-      transform-style: preserve-3d*/
+    justify-content: space-around
+    align-items: center
+    flex-direction: column
+    height: 40vh
     #quote
-      @include borderRules
       font-size: 20px
-      margin-top: 5px
+      margin: 1em
       padding: 0px 15px
       background-color: #000
-      float: center
       display: inline-block
+      border-radius: 5px
+      // box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.5)
     #quoteAuthore
-      @include borderRules
+      border-radius: 3px
       font-size: 15px
       margin-top: 5px
       display: inline-block
@@ -55,17 +55,20 @@ main
       padding-right: 15px
       padding-top: -2px
       padding-bottom: -2px
-      background-color: #4d5966
+      background-color: rgba(0,0,0,0.5)
       float: center
       clear: both
 
   .buttons-container
+    height: 15vh
     width: 100%
     background-color: rgba(255, 255, 255, 0.4)
     padding: 10px 0px
     box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.5)
     .buttonik
-      @include borderRules
+      // @include borderRules
+      border: 0
+      border-radius: 3px
       width: auto
       font-size: 15px
       text-align: center
